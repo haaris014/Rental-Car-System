@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewsView_Controller">
+         <top>
+            <AnchorPane prefHeight="90.0" prefWidth="1280.0" style="-fx-background-color: #0c7920;" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#074612" height="111.0" layoutY="-2.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="1536.0" />
+                  <Button id="button-1" layoutX="1012.0" layoutY="67.0" mnemonicParsing="false" styleClass="button-1" stylesheets="@../../../../Downloads/i200792_i200489_project/i200792_i200489_project/src/button.css" text="Home" textFill="BLACK" />
+                  <Button id="button-1" layoutX="1100.0" layoutY="67.0" mnemonicParsing="false" styleClass="button-1" stylesheets="@../../../../Downloads/i200792_i200489_project/i200792_i200489_project/src/button.css" text="View Fixtures" textFill="BLACK" />
+                  <Button id="button-1" layoutX="1320.0" layoutY="67.0" mnemonicParsing="false" styleClass="button-1" stylesheets="@../../../../Downloads/i200792_i200489_project/i200792_i200489_project/src/button.css" text="Book Ticket" textFill="BLACK" />
+                  <Button id="button-1" layoutX="1444.0" layoutY="67.0" mnemonicParsing="false" styleClass="button-1" stylesheets="@../../../../Downloads/i200792_i200489_project/i200792_i200489_project/src/button.css" text="Login" textFill="BLACK" />
+            <Button id="button-1" layoutX="1230.0" layoutY="67.0" mnemonicParsing="false" styleClass="button-1" stylesheets="@../../../../Downloads/i200792_i200489_project/i200792_i200489_project/src/button.css" text="News" textFill="BLACK" />
+            <ImageView fitHeight="105.0" fitWidth="1039.0" layoutX="-24.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Footer.jpg" />
+               </image>
+            </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="105.0" layoutX="90.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c7920" height="722.0" layoutX="296.0" stroke="TRANSPARENT" strokeType="INSIDE" width="15.0" />
+                  <Text layoutX="43.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAKISTAN CRICKET BOARD">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="227.0" fitWidth="194.0" layoutX="64.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/PCB_LOGO.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="712.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="News">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Text>
+            <TableView fx:id="News_View" layoutX="450.0" layoutY="139.0" prefHeight="462.0" prefWidth="695.0">
+              <columns>
+                <TableColumn id="Date" fx:id="News_ID" prefWidth="60.0" text="News_ID" />
+                  <TableColumn id="Time" fx:id="Title_Col" prefWidth="171.0" text="Title" />
+                  <TableColumn fx:id="Desc_Col" prefWidth="463.0" text="Description" />
+              </columns>
+            </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="275.0" fitWidth="248.0" layoutX="-104.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Sidebar.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="275.0" fitWidth="248.0" layoutX="-102.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Sidebar2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="275.0" fitWidth="248.0" layoutX="-103.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Sidebar3.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+   <bottom>
+      <AnchorPane prefHeight="46.0" prefWidth="1536.0" style="-fx-background-color: #0c7920;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="23.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All rights reserved by Pakistan Cricket Board © 2022">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </bottom>
+         
+                  </BorderPane>
